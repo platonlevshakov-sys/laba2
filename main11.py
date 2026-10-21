@@ -1,7 +1,8 @@
-import math
-radius = 5
-length = 2 * math.pi * radius
-area = math.pi * (radius**2)
-print(f'Длина окружности: {length:.2f}')
-print(f'Площадь круга: {area:.2f}')
-print(f'корень из 144: {int(math.sqrt(144))}')
+print('num 11:')
+num11 = [-10, 3, -2, 8, -5]
+sts =  sorted(num11)
+print(F'Обычная сортировка: {sts}')
+abss = sorted(num11, key=lambda x:abs(x))
+print(f'Сортировка по модулю: {abss}')
+
+

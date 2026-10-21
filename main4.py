@@ -1,10 +1,19 @@
-name = 'platon' #str
-age = 18 #int
-height = 1.85 #float
-student = True #bool
-print(name,age,height,student)
-print(type(name),type(age),type(height),type(student))
-#пункт 4
-age = 19
-student = False
-print(age,student)
+print('num 4: ')
+#список
+n = [14, -3, 25, 0, 8, -12, 44, 7, 29, 2]
+print(f'Исходный список: {n}')
+#вывод 1-го, 3-го и последнего эл-та:
+print(f'первый - {n[0]},'
+      f'третий - {n[2]},'
+      f'последний {n[-1]}')
+#Изменение 2-го эл-та:
+n[1]=100
+print(f'После изменения 2-го эл-та:{n}')
+#Добавление нового эл-та:
+n.append(87)
+print(f'Добавлен новый элемент в конец: {n}')
+#Удаление эл-та:
+rem = n.pop() #Удаление последнего эл-та
+print(f"Удален последний эл-т: {rem} из {n}")
+#Итог
+print(f'Итоговый список: {n}, в нем {len(n)} эл-тов')
